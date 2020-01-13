@@ -9,6 +9,12 @@ An [Awesome List](https://github.com/sindresorhus/awesome/blob/master/awesome.md
    * [Training/Documentation](#trainingdocumentation)
    * [Resources for Web Publishers](#resources-for-web-publishers)
    * [Tools & Software](#tools--software)
+       * [Acquisition](#acquisition)
+       * [Replay](#replay)
+       * [Search & Discovery](#search--discovery)
+       * [Utilities](#utilities)
+       * [Analysis](#analysis)
+       * [Quality Assurance](#quality-assurance)
    * [Community Resources](#community-resources)
    * [Deprecated](#deprecated)
 
@@ -70,7 +76,7 @@ This list of tools and software is intended to briefly describe some of the most
 
 * [ArchiveBox](https://github.com/pirate/ArchiveBox) (In Development) - A tool which maintains an additive archive from RSS feeds, bookmarks, and links using wget, chrome headless, and other methods. (formerly `Bookmark Archiver`)
 
-* [archivenow](https://github.com/oduwsdl/archivenow) (Stable)	- A [Python library](http://ws-dl.blogspot.com/2017/02/2017-02-22-archive-now-archivenow.html) to push web resources into on-demand web archives.
+* [archivenow](https://github.com/oduwsdl/archivenow) (Stable) - A [Python library](http://ws-dl.blogspot.com/2017/02/2017-02-22-archive-now-archivenow.html) to push web resources into on-demand web archives.
 
 * [Brozzler](https://github.com/internetarchive/brozzler) (Stable) - A distributed web crawler (爬虫) that uses a real browser (chrome or chromium) to fetch pages and embedded urls and to extract links.
 
@@ -82,7 +88,9 @@ This list of tools and software is intended to briefly describe some of the most
 
 * [F(b)arc](https://github.com/justinlittman/fbarc) (Stable) - A commandline tool and Python library for archiving data from [Facebook](https://www.facebook.com/) using the [Graph API](https://developers.facebook.com/docs/graph-api).
 
-* [grab-site](https://github.com/ludios/grab-site) (Stable) - The archivist's web crawler: WARC output, dashboard for all crawls, dynamic ignore patterns.
+* [freeze-dry](https://github.com/WebMemex/freeze-dry) (In Development) – JavaScript library to turn page into static, self-contained HTML document; useful for browser extensions.
+
+* [grab-site](https://github.com/ArchiveTeam/grab-site) (Stable) - The archivist's web crawler: WARC output, dashboard for all crawls, dynamic ignore patterns.
 
 * [Heritrix](https://github.com/internetarchive/heritrix3/wiki) (Stable) - An open source, extensible, web-scale, archival quality web crawler.
 
@@ -92,11 +100,17 @@ This list of tools and software is intended to briefly describe some of the most
 
 * [Lentil](https://github.com/NCSU-Libraries/lentil) (Stable) - A Ruby on Rails Engine that supports the harvesting of images from Instagram and provides several browsing views, mechanisms for sharing, tools for users to select their favorite images, an administrative interface for moderating images, and a system for harvesting images and submitting donor agreements in preparation of ingest into external repositories.
 
+* [monolith](https://github.com/Y2Z/monolith) (Stable) - CLI tool to save a web page as a single HTML file.
+
+* [SingleFile](https://github.com/gildas-lormeau/SingleFile) (Stable) - Browser extension for Firefox/Chrome and CLI tool to save a faithful copy of a complete page as a single HTML file.
+
 * [SiteStory](http://mementoweb.github.com/SiteStory/) (Stable) - A transactional archive that selectively captures and stores transactions that take place between a web client (browser) and a web server.
 
 * [Social Feed Manager](https://gwu-libraries.github.io/sfm-ui/) (Stable) - Open source software that enables users to create social media collections from Twitter, Tumblr, Flickr, and Sina Weibo public APIs. 
 
 * [Squidwarc](https://github.com/N0taN3rd/Squidwarc) (In Development) - An [open source, high-fidelity, page interacting](http://ws-dl.blogspot.com/2017/07/2017-07-24-replacing-heritrix-with.html) archival crawler that uses Chrome or Chrome Headless directly.
+
+* [StormCrawler](http://stormcrawler.net/) (Stable) - A collection of resources for building low-latency, scalable web crawlers on Apache Storm.
 
 * [twarc](https://github.com/docnow/twarc) (Stable) - A command line tool and Python library for archiving Twitter JSON data.
 
@@ -107,6 +121,8 @@ This list of tools and software is intended to briefly describe some of the most
 * [WAIL](https://machawk1.github.io/wail/) (Stable) - A graphical user interface (GUI) atop multiple web archiving tools intended to be used as an easy way for anyone to preserve and replay web pages; [Python](https://machawk1.github.io/wail/), [Electron](https://github.com/n0tan3rd/wail).
 
 * [Web2Warc](https://github.com/helgeho/Web2Warc) (Stable) - An easy-to-use and highly customizable crawler that enables anyone to create their own little Web archives (WARC/CDX).
+
+* [WebMemex](https://webmemex.org/) (In Development) - Browser extension for Firefox and Chrome which lets you archive web pages you visit.
 
 * [Webrecorder](https://webrecorder.io/) (Stable) - Create high-fidelity, interactive recordings of any web site you browse.
 
@@ -166,6 +182,8 @@ This list of tools and software is intended to briefly describe some of the most
 
 * [OutbackCDX](https://github.com/nla/outbackcdx) (Stable) - RocksDB-based capture index (CDX) server supporting incremental updates and compression. Can be used as backend for OpenWayback, PyWb and [Heritrix](https://github.com/ukwa/ukwa-heritrix/blob/master/src/main/java/uk/bl/wap/modules/uriuniqfilters/OutbackCDXRecentlySeenUriUniqFilter.java).
 
+* [py-wasapi-client](https://github.com/unt-libraries/py-wasapi-client) (Stable) - Command line application to download crawls from WASAPI. (Python)
+
 * [The Archive Browser](https://archivebrowser.c3.cx/) - The Archive Browser is a program that lets you browse the contents of archives, as well as extract them. It will let you open files from inside archives, and lets you preview them using Quick Look. WARC is supported. (OSX only, Proprietary app)
 
 * [The Unarchiver](http://unarchiver.c3.cx/unarchiver) - Program to extract the contents of many archive formats, inclusive of WARC, to a file system. Free variant of The Archive Browser. (OSX only, Proprietary app)
@@ -186,13 +204,44 @@ This list of tools and software is intended to briefly describe some of the most
 
 * [webarchive-indexing](https://github.com/ikreymer/webarchive-indexing) - Tools for bulk indexing of WARC/ARC files on Hadoop, EMR or local file system.
 
+* [wikiteam](https://github.com/WikiTeam/wikiteam) (Stable) - Tools for downloading and preserving wikis
+
 #### Analysis
 
 * [ArchiveSpark](https://github.com/helgeho/ArchiveSpark) (Stable) - An Apache Spark framework (not only) for Web Archives that enables easy data processing, extraction as well as derivation.
 
 * [Archives Unleashed Cloud](https://cloud.archivesunleashed.org) (Stable) - Archives Unleashed Cloud (AUK) is an web interface for analysing web archives. Currently, it can sync with Archive-It collections and extract hyperlink networks, full text, and other information from your collections.
 
+* [Archives Unleashed Notebooks](https://github.com/archivesunleashed/auk-notebooks) - Jupyter notebooks to assist in creating additional analysis and visualizations of Archives Unleashed Cloud derivatives.
+
 * [Archives Unleashed Toolkit](https://github.com/archivesunleashed/aut) (Stable) - Archives Unleashed Toolkit (AUT) is an open-source platform for analyzing web archives.
+
+#### Quality Assurance
+
+* [Chrome Check My Links](https://chrome.google.com/webstore/detail/check-my-links/ojkcdipcgfaekbeaelaapakgnjflfglf) - Browser extension: a link checker with more options
+
+* [Chrome link checker](https://chrome.google.com/webstore/detail/link-checker/aibjbgmpmnidnmagaefhmcjhadpffaoi) - Browser extension: basic link checker
+
+* [Chrome link gopher](https://chrome.google.com/webstore/detail/bpjdkodgnbfalgghnbeggfbfjpcfamkf/publish-accepted?hl=en-US&gl=US) - Browser extension: link harvester on a page 
+
+* [Chrome Open Multiple URLs](https://chrome.google.com/webstore/detail/open-multiple-urls/oifijhaokejakekmnjmphonojcfkpbbh?hl=de) - Browser extension: opens multiple URLs and also extracts URLs from text
+
+* [Chrome Revolver](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda) - Browser extension: switches between browser tabs
+
+* [FlameShot](https://github.com/lupoDharkael/flameshot) - Screen capture and annotation on Ubuntu
+
+* [PlayOnLinux](https://www.playonlinux.com/en/) - For running Xenu and Notepad++ on Ubuntu
+
+* [PlayOnMac](https://www.playonmac.com/en/) - For running Xenu and Notepad++ on MacOS.
+
+* [Windows Snipping Tool](https://support.microsoft.com/en-gb/help/13776/windows-use-snipping-tool-to-capture-screenshots) - Windows built-in for partial screen capture and annotation. On MacOS you can use Command + Shift + 4 (keyboard shortcut for taking partial screen capture)
+
+* [WineBottler](http://winebottler.kronenberg.org/) - For running Xenu and Notepad++ on MacOS.
+
+* [xDoTool](https://github.com/jordansissel/xdotool) - Click automation on Ubuntu
+
+* [Xenu](http://home.snafu.de/tilman/xenulink.html) - Desktop link checker for Windows
+
 
 ### Community Resources
 
@@ -223,7 +272,7 @@ This list of tools and software is intended to briefly describe some of the most
 
 ### Deprecated
 
-* [ArchiveFacebook](https://addons.mozilla.org/en-US/firefox/addon/archivefacebook/) (Abandoned)	- A [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/) add-on for individuals to archive their Facebook accounts.
+* [ArchiveFacebook](https://addons.mozilla.org/en-US/firefox/addon/archivefacebook/) (Abandoned) - A [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/) add-on for individuals to archive their Facebook accounts.
 
 * [pywb Wayback Web Recorder (Archiver)](https://github.com/ikreymer/pywb-webrecorder) (Sunsetted) - A bare-bones example of how to create a simple web recording and replay system.
 
